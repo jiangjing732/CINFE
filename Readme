@@ -1,0 +1,7 @@
+The implement of CINFE on AD bulk data is shown as examples in this project. The input data can be changed with the other datasets if necessary.
+
+Calculating causal total network flow entropy (CTNFE) input data: express_matrix.csv, network.txt; output data: CTNFE_all_samples.csv running pipeline: calculate CTNFE.py
+
+Calculating causal external network flow entropy (CENFE) input data: express_matrix.csv, network.txt; output data: CENFE_all_samples.csv running pipeline: calculate CENFE.py
+
+Calculating causal internal network flow entropy (CINFE) and displaying result running pipeline input data: CTNFE_all_samples.csv, CENFE_all_samples.csv; running pipeline: CINFE.m 
