@@ -1,7 +1,19 @@
-The implement of CINFE on AD bulk data is shown as examples in this project. The input data can be changed with the other datasets if necessary.
+#CINFE
+Code and datasets for paper "Causal Internal Network Flow Entropy (CINFE) Reveals CD80–MBP Axis Couples Glial Activation to Myelin Breakdown in Alzheimer’s Progression"
 
-Calculating causal total network flow entropy (CTNFE) input data: express_matrix.csv, network.txt; output data: CTNFE_all_samples.csv running pipeline: calculate CTNFE.py
+##Causal Internal Network Flow Entropy (CINFE) Reveals CD80–MBP Axis Couples Glial Activation to Myelin Breakdown in Alzheimer’s Progression
+Early detection of Alzheimer's disease (AD) and its critical transition point remain a significant challenge due to the limitations of conventional expression-based biomarkers. To address this, we introduce Causal Internal Network Flow Entropy (CINFE), a novel computational framework that detects impending pathological shifts by quantifying dynamic perturbations within gene regulatory networks. CINFE constructs causal directed networks from gene expression data and calculates an entropy score reflecting internal network stability. A sharp rise in this score serves as an early-warning signal for the critical pre-disease state. Applied to staged AD transcriptomic data, CINFE identified the incipient stage as the tipping point and revealed dynamic network biomarkers (DNBs). Crucially, it uncovered non-differentially expressed "dark genes" (e.g., MBP, CD80), elucidating their roles in tau hyperphosphorylation and neuroinflammation-myelin injury axes. In single-cell RNA-seq analysis, CINFE-based clustering outperformed expression-based methods and pinpointed novel cell-type-specific signatures such as NRCAM and CTNND2. Validated by numerical simulations and real datasets, CINFE provides a robust, network-driven approach for early AD detection and mechanistic discovery, offering superior performance over traditional analyses and identifying potential new therapeutic targets.
 
-Calculating causal external network flow entropy (CENFE) input data: express_matrix.csv, network.txt; output data: CENFE_all_samples.csv running pipeline: calculate CENFE.py
+## Data avalability
+The datasets supporting the conclusions of this article can be downloaded from the NCBI (http://www.ncbi.nlm.nih.gov/geo/). To ensure reproducible results, the original code is available at https://github.com/jiangjing732/CINFE.git.
 
-Calculating causal internal network flow entropy (CINFE) and displaying result running pipeline input data: CTNFE_all_samples.csv, CENFE_all_samples.csv; running pipeline: CINFE.m 
+### readme
+PYTHON and MATLAB environment.
+
+The implement of CINFE on AD sample data (GSE28146) is shown as examples in this project. The input data can be changed with the other datasets if necessary.
+
+Calculating causal total network flow entropy (CTNFE) input data: express_matrix.csv, network.txt; output data: CTNFE_all_samples.csv running pipeline: CINFE.py
+
+Calculating causal external network flow entropy (CENFE) input data: express_matrix.csv, network.txt; output data: CENFE_all_samples.csv running pipeline: CINFE.py
+
+Calculating causal internal network flow entropy (CINFE) and displaying result running pipeline input data: express_matrix.csv, network.txt; output data: LUAD_entropy_matrix.csv running pipeline:  CINFE.m
