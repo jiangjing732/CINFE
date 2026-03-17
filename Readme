@@ -16,4 +16,4 @@ Calculating causal total network flow entropy (CTNFE) input data: express_matrix
 
 Calculating causal external network flow entropy (CENFE) input data: express_matrix.csv, network.txt; output data: CENFE_all_samples.csv running pipeline: CINFE.py
 
-Calculating causal internal network flow entropy (CINFE) and displaying result running pipeline input data: express_matrix.csv, network.txt; output data: LUAD_entropy_matrix.csv running pipeline:  CINFE.m
+Calculating causal internal network flow entropy (CINFE) and displaying result running pipeline input data: express_matrix.csv, network.txt; running pipeline:  CINFE.m
